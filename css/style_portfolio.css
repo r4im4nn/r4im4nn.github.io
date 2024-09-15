@@ -1,0 +1,242 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.nav_content{
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.nav_content ul{
+    margin: 0px;
+    padding: 0px;
+    border: 3px solid black;
+}
+
+.nav_content li{
+    list-style-type: none;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nav_content a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.table{
+    display: table;
+    margin: 0 auto;
+
+}
+
+.nav_content_whoami a:hover{
+    background-color: black;
+    color: white;
+}
+.nav_content_certification_attestation a:hover{
+    background-color: black;
+    color: white;
+}
+.nav_content_work_experience a:hover{
+    background-color: black;
+    color: white;   
+}
+.nav_content_projects a:hover{
+    background-color: black;
+    color: white;
+}
+.nav_content_links a:hover{
+    background-color: black;
+    color: white;
+}
+
+article{
+    margin-top: 40px;
+    margin: 7%;
+}
+
+.paragraph_cert_attest{
+    font-size: 18px;
+}
+.section_projects a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;  
+}
+.section_projects a:hover{
+    text-decoration: underline;
+    text-decoration-color: grey;
+  
+}
+
+.paragraph_projects{
+    font-size: 18px;
+    
+}
+.section_certification_attestation li{
+    list-style:square;
+    margin-left: 8.1%;
+}
+
+.tryhackme_paths_links{
+    text-decoration: none;
+    color: black;
+}
+.tryhackme_paths_links:hover{
+    text-decoration: underline;
+}
+
+section{
+    min-height: 200px;
+}
+
+footer {
+    position:static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+footer p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+   
+}
+
+.paragraph_whoami{
+    text-align: justify;
+    font-size: clamp(1.2rem, 4vw, 1rem);
+}
+
+
+.table_links{
+    border-collapse: collapse;
+    min-width: 50%;
+    width: auto;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    margin: 50px auto;
+    border: 2px solid black;
+}
+
+.table_links thead tr{
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+.table_links th, td{
+    padding: 15px 20px;
+    text-align: center;
+    display: block;
+}
+
+.table_links tbody tr,td,th{
+    border: 1px solid white;
+    border: 2px solid black;
+}
+
+.table_links a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.table_links a:hover{
+    text-decoration: underline;
+}
+
+
+/************************************************************************************************/
+/**************************************[ MEDIA QUERIES ]*****************************************/
+
+@media screen and (max-width: 1200px){
+    .nav_content li a{
+        font-size: 12px;
+        padding: 6px;
+        font-weight: bold;
+    }
+    .paragraph_whoami{
+        font-size: 15px;
+    }
+    .paragraph_cert_attest{
+        font-size: 15px;
+    }
+    .section_work_experience{
+        font-size: 15px;
+    }
+    .paragraph_projects{
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 780px){
+    h1{
+        font-size: 15px;
+        margin: 20px 0px 0px 0px;
+    }
+    .nav_content li a{
+        font-size: 8px;
+        padding: 6px;
+        font-weight: bold;
+    }
+    .paragraph_whoami{
+        font-size: 15px;
+    }
+    .paragraph_cert_attest{
+        font-size: 15px;
+    }
+    .section_work_experience{
+        font-size: 15px;
+    }
+    .paragraph_projects{
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 400px){
+
+    .nav_content li a{
+        font-size: 7px;
+        padding: 2px;
+        font-weight: bold;
+        
+    }
+    .paragraph_whoami{
+        font-size: 15px;
+    }
+    .paragraph_cert_attest{
+        font-size: 15px;
+    }
+    .section_work_experience{
+        font-size: 15px;
+    }
+    .paragraph_projects{
+        font-size: 15px;
+    }
+    .table_links img{
+        width: 150px;
+        height: 40px;
+    }
+}
